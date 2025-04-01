@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/header.css">
+
+    <title>LP Avanti</title>
+
+    <script src="https://kit.fontawesome.com/282fdc0461.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="discount">
+            <div class="discountDiv">
+                <p>Ganhe</p>
+                <p class="ten">R$ 10,00</p>
+                <p>desconto no seu primeiro pedido.</p>
+            </div>
+            <div class="discountDiv">
+                <p>Utilize o cupom</p>
+                <p class="cupom">DESCONTO10</p>
+            </div>
+        </div>
+
+        <div class="logoSearchUser">
+            <div class="logoSearch">
+                <img src="./images/logo.png" alt="Logo Avanti">
+                <div class="searchDiv">
+                    <input type="search" class="search" id="searchInput" placeholder="Digite aqui o que você procura">
+                    <button type="button" id="searchButton">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div id="searchResult"></div>
+            </div>
+            <div class="userCart">
+                <div class="user">
+                    <i class="fa-regular fa-user"></i>
+                    <div>
+                        <p>Olá,</p>
+                        <p>Nome cliente!</p>
+                    </div>
+                </div>
+                <div class="cart">
+                    <img src="./images/carrinho.png" alt="carrinho">
+                    <span>2</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
