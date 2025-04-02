@@ -33,15 +33,19 @@
         </div>
 
         <div class="logoSearchUser">
+            <div class="sandwichMenu">
+                <img src="./images/sanduiche.png" alt="" srcset="menu sanduiche">
+            </div>
             <div class="logoSearch">
                 <img src="./images/logo.png" alt="Logo Avanti">
                 <div class="searchDiv">
-                    <input type="search" class="search" id="searchInput" placeholder="Digite aqui o que você procura">
-                    <button type="button" id="searchButton">
+                    <input type="search" class="search searchInput" id="searchInput"
+                        placeholder="Digite aqui o que você procura">
+                    <button type="button" id="searchButton" class="searchButton">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
+                    <div id="searchResult" class="searchResult"></div>
                 </div>
-                <div id="searchResult"></div>
             </div>
             <div class="userCart">
                 <div class="user">
@@ -56,6 +60,44 @@
                     <span>2</span>
                 </div>
             </div>
+        </div>
+
+        <div class="searchDivMobile">
+            <div class="searchMobileInput">
+                <input type="search" class=" searchInputMobile" id="searchInputMobile"
+                    placeholder="Digite aqui o que você procura">
+                <button type="button" id="searchButtonMobile" class="searchButtonMobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div id="searchResultMobile" class="searchResult searchResultMobile"></div>
+        </div>
+
+        <section class="categories">
+            <button class="buttonCategories inactive" id="buttonCategories">
+                <i class="fa-solid fa-bars"></i>
+                <p>Todas as Categorias</p>
+            </button>
+    
+            <ul class="listDepartments">
+                <li>
+                    <button class="buttonDepatments inactive" id="buttonDepatments">Departamentos</button>
+                </li>
+                <li>Departamentos</li>
+                <li>Departamentos</li>
+                <li>Departamentos</li>
+                <li>Departamentos</li>
+                <li>Departamentos</li>
+                <li>Departamentos</li>
+                <li>Departamentos</li>
+            </ul>
+        </section>
+    
+        <div class="tooltip" id="tooltip">
+            <img src="./images/categorias.png" alt="Categorias" class="imageCategory">
+        </div>
+        <div class="infoDepatments" id="infoDepatments">
+            <img src="./images/departamentos.png" alt="" class="imageCategory">
         </div>
     </header>
 

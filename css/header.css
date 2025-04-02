@@ -1,9 +1,9 @@
-.header{
+.header {
     position: fixed;
     width: 100%;
 }
 
-.discount{
+.discount {
     display: flex;
     width: 100%;
     height: 30px;
@@ -16,18 +16,18 @@
     font-weight: 700;
     line-height: 22px;
 
-    @media(max-width: 500px){
+    @media(max-width: 500px) {
         flex-direction: column;
-        height: 52px; 
+        height: 52px;
     }
 }
 
-.discountDiv{
+.discountDiv {
     display: flex;
     gap: 3px;
 }
 
-.ten{
+.ten {
     background-color: #6220C1;
     text-align: center;
     width: 63px;
@@ -35,72 +35,109 @@
     border-radius: 4px;
 }
 
-.cupom{
+.cupom {
     font-weight: 300;
     font-style: italic;
 }
 
-.logoSearchUser{
+.logoSearchUser {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 200px;
     margin: 17px 0;
+
+    @media(max-width: 1220px) {
+        gap: 3px;
+    }
+
+    @media(max-width: 760px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 17px 16px;
+    }
 }
 
-.logoSearch{
+.logoSearch {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
+
+    @media(max-width: 1010px) {
+        gap: 10px;
+    }
 }
 
-.searchDiv{
+.searchDiv {
     width: 594px;
     height: 45px;
     padding: 1px 3px;
     border: 1px solid #DDDDDD;
     border-radius: 10px;
 
-    button{
+    button {
         background-color: transparent;
     }
 
-    i{
+    i {
         font-size: 20.7px;
+    }
+
+    @media(max-width: 950px) {
+        width: 400px;
+    }
+
+    @media(max-width: 760px) {
+        display: none;
     }
 }
 
-.search{
+.search {
     width: 550px;
     height: 41px;
+
+    @media(max-width: 950px) {
+        width: 360px;
+    }
 }
 
-.userCart{
+.searchResult {
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.userCart {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.user{
+.user {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
 
-    i{
+    @media(max-width: 760px) {
+        display: none;
+    }
+
+    i {
         font-size: 26px;
         color: var(--cor-azul-botoes);
     }
 
-    div{
+    div {
         font-size: 14px;
         font-weight: 600;
         line-height: 14px;
     }
 }
 
-.cart{
+.cart {
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -112,7 +149,7 @@
     position: relative;
     margin-left: 20px;
 
-    span{
+    span {
         background-color: var(--cor-azul-botoes);
         width: 15px;
         height: 15px;
@@ -126,5 +163,139 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+.sandwichMenu {
+    display: none;
+
+    @media(max-width: 760px) {
+        display: block;
+        width: 23px;
+        height: 21px;
+        margin-bottom: 5px;
+    }
+}
+
+.searchDivMobile {
+    display: none;
+
+    @media(max-width: 760px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.searchMobileInput {
+    width: 351px;
+    height: 40px;
+    padding: 1px 3px;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+
+    input {
+        width: 311px;
+        height: 35px;
+    }
+
+    button {
+        background-color: transparent;
+        font-size: 18px;
+    }
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+
+    @media(max-width: 1100px){
+        gap: 0px;
+    }
+
+    @media(max-width: 1000px){
+        display: none;
+    }
+}
+
+.buttonCategories, .buttonDepatments {
+    background-color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.buttonCategories i, .buttonCategories p {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.buttonCategories p {
+    font-weight: 700;
+}
+
+.buttonCategories:hover, .buttonDepatments:hover {
+    color: blue;
+}
+
+.listDepartments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    font-size: 14px;
+    font-weight: 400;
+
+    @media(max-width: 1100px){
+        gap: 2px;
+    }
+
+    @media(max-width: 1000px){
+        display: none;
+    }
+}
+
+.tooltip, .infoDepatments {
+    display: none;
+    background: var(--cor-branco);
+    color: black;
+    text-align: center;
+}
+
+/* Classe ativa */
+.active {
+    background-color: var(--cor-branco);
+    color: var(--cor-azul-botoes);
+    font-weight: 700;
+}
+
+/* Classe inativa */
+.inactive {
+    background-color: var(--cor-branco);
+    color: black;
+}
+
+.imageCategory{
+    max-width: 1190px;
+    height: 329px;
+
+    @media(max-width: 1100px){
+        max-width: 990px;
+        height: 270px;
+    }
+
+    @media(max-width: 1000px){
+        display: none;
     }
 }
