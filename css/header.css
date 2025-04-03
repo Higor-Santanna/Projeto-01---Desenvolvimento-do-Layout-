@@ -279,14 +279,12 @@
     text-align: center;
 }
 
-/* Classe ativa */
 .active {
     background-color: var(--cor-branco);
     color: var(--cor-azul-botoes);
     font-weight: 700;
 }
 
-/* Classe inativa */
 .inactive {
     background-color: var(--cor-branco);
     color: black;

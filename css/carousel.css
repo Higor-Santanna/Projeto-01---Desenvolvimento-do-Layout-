@@ -1,0 +1,315 @@
+.sectionCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 480px;
+    background-color: var(--cor-branco);
+    margin: 50px 0;
+}
+
+.divFatherCarousel {
+    width: 1305px;
+}
+
+.releasesMore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 18px;
+
+    h2 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    a {
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: var(--cor-branco);
+    padding: 10px 0;
+}
+
+.carousel-container {
+    width: 99%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 238px;
+    height: 415px;
+    border: 1px solid var(--cor-borda-input);
+    margin: 0 10px;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+
+    h3 {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 5px 0;
+    }
+}
+
+.span {
+    width: 41px;
+    height: 22px;
+    border-radius: 4px;
+    background-color: var(--cor-botao-carrosel);
+    color: var(--cor-branco);
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 222px;
+    border-radius: 10px;
+}
+
+.divPrice {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.priceOld {
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.priceNew {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.discountPrice {
+    width: 64px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-disconto-carrosel);
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: underline;
+    border-radius: 4px;
+    color: var(--cor-branco);
+}
+
+.divDivide {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.divide {
+    font-weight: 700;
+    color: #303030;
+}
+
+.buy-btn {
+    background-color: var(--cor-azul-botoes);
+    color: var(--cor-branco);
+    border: none;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.carousel-btn {
+    background: var(--cor-branco);
+    border: none;
+    font-size: 17px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid var(--cor-azul-botoes);
+    color: var(--cor-azul-botoes);
+}
+
+#prev {
+    left: 1px;
+    z-index: 1;
+}
+
+#next {
+    right: 1px;
+    z-index: 1;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* RESPONSIVIDADE */
+
+/* Tablets (até 1024px) */
+@media(max-width: 1360px) {
+    .divFatherCarousel {
+        width: 98%;
+    }
+
+    .carousel-item {
+        min-width: 200px;
+        height: 420px;
+    }
+
+    .carousel-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile (até 768px) */
+@media(max-width: 768px) {
+    .carousel-container {
+        width: 100%;
+    }
+
+    .carousel-item {
+        min-width: 230px;
+        height: 420px;
+        margin: 0 4px;
+    }
+
+    .carousel-btn {
+        display: none;
+    }
+
+    .releasesMore h2 {
+        font-size: 18px;
+    }
+
+    .releasesMore a {
+        font-size: 12px;
+    }
+}
+
+/* Pequenos celulares (até 480px) */
+@media(max-width: 500px) {
+    .divFatherCarousel {
+        width: 100%;
+    }
+
+    /* .carousel-container {
+        width: 98%;
+    }
+
+    .carousel-item {
+        min-width: 230px;
+        height: 420px;
+        margin: 0 4px;
+    } */
+
+    .carousel-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+        text-align: center;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .carousel-item img {
+        width: 158px;
+        height: 158px;
+    }
+
+    .carousel-btn {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 430px) {
+    .carousel-container {
+        padding: 1px;
+    }
+
+    .carousel-item {
+        min-width: 188px;
+        height: 375px;
+        margin: 0 10px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        background-color: gray;
+    }
+
+    .dot.active {
+        background-color: black;
+    }
+}
+
+@media(max-width: 390px) {
+    .carousel-item {
+        min-width: 185px;
+        height: 375px;
+        margin: 0 4px;
+    }
+}
+
+@media(max-width: 375px) {
+    .carousel-item {
+        min-width: 178px;
+        height: 375px;
+        margin: 0 4px;
+    }
+}
