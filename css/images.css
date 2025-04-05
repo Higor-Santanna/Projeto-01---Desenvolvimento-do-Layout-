@@ -15,3 +15,20 @@
         padding-top: 168px;
     }
 }
+
+.contactBannerDesktop{
+    width: 100%;
+    
+    @media(max-width: 500px){
+        display: none;
+    }
+}
+
+.contactBannerMobile{
+    display: none;
+
+    @media(max-width: 500px){
+        display: block;
+        width: 100%;
+    }
+}

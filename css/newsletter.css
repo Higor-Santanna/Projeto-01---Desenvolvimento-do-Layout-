@@ -1,0 +1,86 @@
+.sectionNewsletter {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 20px;
+
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+.news {
+    color: var(--cor-azul-botoes);
+}
+
+.fieldsInputs {
+    width: 1260px;
+    height: 176px;
+    background-color: #DEDEDE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    gap: 15px;
+}
+
+.fields {
+    width: 280px;
+    height: 48px;
+    border-radius: 8px;
+    padding-left: 15px;
+}
+
+.privacy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    p {
+        font-size: 12px;
+        font-weight: 700;
+        color: #656565;
+    }
+}
+
+.policy {
+    text-decoration: underline;
+}
+
+.registerButton {
+    width: 121px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: var(--cor-azul-botoes);
+    font-size: 16px;
+    color: var(--cor-branco);
+    font-weight: 700;
+}
+
+@media(max-width: 1300px) {
+    .fieldsInputs {
+        width: 97%;
+    }
+}
+
+@media(max-width: 950px) {
+    .fieldsInputs {
+        height: 285px;
+        flex-direction: column;
+    }
+
+    .registerButton{
+        width: 280px;
+    }
+}
