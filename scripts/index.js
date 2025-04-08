@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
     buttonDepatments.addEventListener("click", toggleInfoDepatments);
 });
 
-document.querySelectorAll('.carousel').forEach((carousel, carIndex) => {
+document.querySelectorAll('.carousel').forEach((carousel) => {
     const track = carousel.querySelector('.carousel-track');
     const prevBtn = carousel.querySelector('.prev');
     const nextBtn = carousel.querySelector('.next');
@@ -103,3 +103,35 @@ document.querySelectorAll('.carousel').forEach((carousel, carIndex) => {
     updateCarousel();
 });
 
+const buttons = document.querySelectorAll('.buttonAcordion');
+const openItems = [];
+
+buttons.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.icon');
+
+    if (content.classList.contains('open')) {
+      content.classList.remove('open');
+      icon.classList.remove('fa-angle-up');
+      icon.classList.add('fa-angle-down');
+      icon.classList.remove('rotate');
+      openItems.splice(openItems.indexOf(content), 1);
+    } else {
+      if (openItems.length >= 1) {
+        const oldest = openItems.shift();
+        oldest.classList.remove('open');
+        const oldIcon = oldest.previousElementSibling.querySelector('.icon');
+        oldIcon.classList.remove('fa-angle-up');
+        oldIcon.classList.add('fa-angle-down');
+        oldIcon.classList.remove('rotate');
+      }
+
+      content.classList.add('open');
+      icon.classList.remove('fa-angle-down');
+      icon.classList.add('fa-angle-up');
+      icon.classList.add('rotate');
+      openItems.push(content);
+    }
+  });
+});
