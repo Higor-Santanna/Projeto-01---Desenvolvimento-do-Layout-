@@ -27,11 +27,7 @@ O projeto foi desenvolvido com a linguagem JavaScript pura, HTML e CSS. A aplica
 </p>
 
 <p align="center">
-    <img src="./images/avanti-2.png" alt="avanti2" width="600px">
-</p>
-
-<p align="center">
-    <img src="./assets/github-3.png" alt="github3" width="600px">
+    <img src="./images/avanti-3.png" alt="avanti2" width="600px">
 </p>
 
 <h2 id="started">🚀 Instalação</h2>
